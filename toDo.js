@@ -5,7 +5,7 @@ function ToDo(description) {
   this.complete = false;
 }
 
-ToDo.prototype.completeTask = function() {
+ToDo.prototype.completeTask = function () {
   this.complete = true;
 };
 
@@ -28,22 +28,19 @@ function createTask(todo, index) {
 
   if (todo.complete) {
     toDoText.className = "todo__complete";
-    checkbox.checked = true; // Set the checkbox as checked for completed tasks
+    checkbox.checked = true;
   }
 
   toDoTask.appendChild(toDoText);
 
-  toDoTask.addEventListener("click", function(event) {
+  toDoTask.addEventListener("click", function (event) {
     if (event.target === checkbox || event.target === toDoText) {
       toDoText.classList.toggle("todo__complete");
 
-      // Update the complete status in the toDoItems array
       toDoItems[index].complete = !toDoItems[index].complete;
     } else if (event.target.classList.contains("todo__icon")) {
       var divElement = event.target.parentNode;
       divElement.remove();
-
-      // Remove the task from the toDoItems array
       toDoItems.splice(index, 1);
     }
   });
