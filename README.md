@@ -1,4 +1,4 @@
-## Project created with React and styled with CSS and MaterialUI.
+## Project created with vanillaJS and styled with CSS.
 
 
 [Visit the webpage](https://todo-materialui.vercel.app/)
