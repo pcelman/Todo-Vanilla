@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>My Vanilla ToDo</title>
+    <link rel="icon" href="./logo.png" />
+    <link rel="stylesheet" href="./style.css" />
+    <script type="text/javascript" src="./toDo.js" async></script>
+  </head>
+  <body>
+ 
+      <section class="paper">
+        <h2 class="paper__title">my todo list</h2>
+        <hr class="paper__horizontal" />
+        <hr class="paper__vertical" />
+        <div id="inputContainer" class="input">
+          <input
+            type="text"
+            id="toDoInput"
+            class="input__form"
+            placeholder="Type in here…"
+          />
+      
+
+            <div  class="input__button" id="addButton" >
+              <img src="./icons/add.png" height="19px" alt="">
+            </div>
+         
+        </div>
+        <div id="task__container" class="todoItem"></div>
+      </section>
+      <div class="link">
+        Designed and developed by <br />
+        <a
+          href="https://paulacelman-portfolio.vercel.app/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          Paula Celman
+        </a>
+      </div>
+
+  </body>
+</html>
